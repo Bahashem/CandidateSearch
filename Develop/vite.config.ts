@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   envDir: './env',
   plugins: [react()],
+  preview: {
+    host: true,                      
+    port: Number(),    
+    allowedHosts: [
+      'module-13-bbw8.onrender.com'    // add your Render hostname here
+    ]
+  }
 });
